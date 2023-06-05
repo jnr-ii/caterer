@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Caterer Web Template</title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="../css/junya-style.css">                                   <!-- Junya style -->
+
+    
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column">                        
+                        <div class="tm-logo-div text-xs-center">
+                            <img src="../img/tm-neaty-logo.png" alt="Logo">
+                            <h1 class="tm-site-name">Caterer</h1>
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                                <li class="tm-nav-item">
+                                    <a href="../index.html#welcome" class="tm-nav-item-link">Welcome</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="../index.html#about" class="tm-nav-item-link">About Us</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="../index.html#galleryone" class="tm-nav-item-link">Gallery One</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="../index.html#secondgallery" class="tm-nav-item-link">Second Gallery</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="../index.html#thirdgallery" class="tm-nav-item-link">Third Gallery</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="../index.html#contact" class="tm-nav-item-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>                                         
+                    </div> <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                        <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>
+                                    <h2 class="tm-blue-text tm-welcome-title tm-margin-b-45">Privacy Policy</h2>
+                                </header>
+                                <p> <a href="../index.html#welcome">Back</a></p>
+                                <p>This privacy notice for [Company name] describes how we may collect, store, use. and/or share your information when you contact us or give us feedback</p>
+                                <p>We collect personal information that you voluntarily provide to us when you express an interest in obtaining our products and services, or otherwise contact us. The personal information we collect include email addresses, names, and sometimes phone numbers and mailing addresses. <br>
+                                We process your personal information for a variety of reasons that include delivering services, responding to your inquiries/offer support to you, and to fulfil and manage your orders. We do not share your personal information with any third parties that are within our region, we only share your information when the third party will be helping us deliver the services to you.</p>
+                            </section>
+
+                            <section id="welcome" class="tm-section">
+                                <header>
+                                    <h2 class="tm-blue-text tm-welcome-title tm-margin-b-45">Terms Of Services</h2>
+                                </header>
+                                <p>By using our services, you agree that you will not: <br>
+                                - Submit false reports of abuse or misconduct. <br>
+                                - Attempt to impersonate another person.</p>
+                                <p>The consequences of violating our Policy will vary depending on the severity of the breach. We may in some cases give you a warning, however if the breach is serious, we have the right to suspend your access to our services, or otherwise cut our ties with you.</p>
+                                <p>
+                                    <small>Last Updated: [date]</small>
+                                </p>
+                            </section>
+                            <footer>
+                                <p><a href="../index.html"> << Back </a></p>
+                                <p class="tm-copyright-p">Copyright &copy; <span class="tm-current-year">2023</span> Your Company 
+                                
+                                | Dev: <a href="http://instagram.com/liltunin" target="_parent">JWW</a></p>
+                            </footer>
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script>     
+       
+            $(document).ready(function(){
+
+                // Single page nav
+                $('.tm-main-nav').singlePageNav({
+                    'currentClass' : "active",
+                    offset : 20
+                });
+
+                // Magnific pop up
+                $('.tm-gallery-1').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-gallery-2').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-gallery-3').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-current-year').text(new Date().getFullYear());                
+            });
+        </script>             
+</body>
+</html>
